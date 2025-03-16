@@ -1,6 +1,6 @@
 # BrainDump-CS 🧠💻  
 
-A little corner of the internet where I dump everything I learn in tech—concepts, code snippets, random insights, and things I find cool. No structure, just pure learning chaos. 🚀  
+A little corner of the internet where I dump everything I learn in tech—concepts, code snippets, random insights, and things I find cool. No structure, just pure learning chaos. 
 
 ## 🌱 What’s here?  
 - CS concepts I pick up along the way  
