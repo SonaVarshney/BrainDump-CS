@@ -1,6 +1,4 @@
- Linux Commands  
-
-## 1. `ls` - List Directory Contents  
+ ## 1. `ls` - List Directory Contents  
 Lists files and directories in the current location.  
 
 ### Common Variants:  
@@ -198,7 +196,6 @@ Shows differences between two files line by line.
 - `diff -y file1 file2` - Shows side-by-side comparison.  
 - `diff -u file1 file2` - Displays unified format differences.  
 
-
 ## 22. SSH (Secure Shell)
 **Command:** `ssh user@hostname`  
 - Used for securely connecting to a remote machine.  
@@ -238,6 +235,13 @@ Shows differences between two files line by line.
 **Command:** `nohup command &`  
 - Allows a process to continue running after logging out.  
 - Example: `nohup python script.py &`  
+  
+OR
+
+**Command:** ```nohup your_command >> output.log &```
+ - nohup ensures the command keeps running even after logout.
+ - ">>" appends the output to output.log instead of overwriting it.
+ - & runs the command in the background.
 
 ## 30. free (Memory Usage)
 **Command:** `free -h`  
