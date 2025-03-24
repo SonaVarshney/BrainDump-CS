@@ -136,4 +136,126 @@ Package management system for Gentoo Linux.
 sudo emerge --sync  # Sync package database
 sudo emerge package_name  # Install a package
 ```
+Here’s the revised list with `su` placed appropriately in the **User & Group Management Commands** section:  
+
+---
+
+## **User & Group Management Commands **  
+
+### **15. `su` (Switch User)**  
+**Description:**  
+The `su` (substitute user) command allows switching to another user account, including root.  
+**Examples:**  
+```sh
+su username  # Switch to another user
+su -  # Switch to the root user (if allowed)
+```
+- If you need root access, you must enter the root password unless using `sudo su`.  
+- The `-` option loads the target user’s environment variables and shell profile.  
+
+### **16. `groupadd`**  
+**Description:**  
+Creates a new group on the system.  
+**Example:**  
+```sh
+sudo groupadd groupname
+```
+
+### **17. `groupdel`**  
+**Description:**  
+Deletes a group from the system.  
+**Example:**  
+```sh
+sudo groupdel groupname
+```
+
+### **18. `passwd -a, -m`**  
+**Description:**  
+- `-a` : Apply password changes to all users.  
+- `-m` : Enable a user’s account after being disabled.  
+**Example:**  
+```sh
+sudo passwd -a username  # Change password for all users
+sudo passwd -m username  # Unlock a disabled user account
+```
+
+---
+
+## **Additional Important System Commands**
+
+### **19. `cat /etc/passwd`**  
+**Description:**  
+Displays user account details stored in `/etc/passwd`.  
+Each line follows the format:  
+`username:x:UID:GID:Full Name:Home Directory:Shell`  
+**Example:**  
+```sh
+cat /etc/passwd
+```
+
+### **20. `cat /etc/group`**  
+**Description:**  
+Displays all groups and their members.  
+**Example:**  
+```sh
+cat /etc/group
+```
+
+### **21. `cat /etc/shadow`**  
+**Description:**  
+Contains encrypted passwords of users (only accessible by root).  
+**Example:**  
+```sh
+sudo cat /etc/shadow
+```
+
+### **22. `usermod`**  
+**Description:**  
+Modify user details like home directory, shell, or groups.  
+**Example:**  
+```sh
+sudo usermod -aG sudo username  # Add user to sudo group
+sudo usermod -l new_username old_username  # Change username
+```
+
+### **23. `last`**  
+**Description:**  
+Shows the login history of users.  
+**Example:**  
+```sh
+last
+```
+
+### **24. `w`**  
+**Description:**  
+Displays active users and what they are doing.  
+**Example:**  
+```sh
+w
+```
+
+### **25. `finger`** *(if installed)*  
+**Description:**  
+Shows detailed information about a user.  
+**Example:**  
+```sh
+finger username
+```
+
+### **26. `deluser`**  
+**Description:**  
+Removes a user account.  
+**Example:**  
+```sh
+sudo deluser username
+```
+
+### **27. `delgroup`**  
+**Description:**  
+Removes a group from the system.  
+**Example:**  
+```sh
+sudo delgroup groupname
+```
+
 
