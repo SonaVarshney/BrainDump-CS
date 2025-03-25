@@ -61,6 +61,7 @@ A **reverse proxy** is an intermediary between clients and backend servers. It m
 - It blocks malicious traffic and accelerates content delivery through edge caching.
 
 ---
+![image](https://github.com/user-attachments/assets/92a0f516-61af-482a-a2a6-267c1d00317e)
 
 ## 3. Setting Up a Reverse Proxy with Nginx
 One of the most popular tools for reverse proxying is **Nginx**. Below is a basic setup guide.
