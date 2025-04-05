@@ -49,9 +49,14 @@
 
 ## 🔹 Tab Example
 
-- Consider a browser like Chrome.
-- If multiple tabs are open, each tab works independently.
-- These tabs are like different threads — one may be loading, one playing YouTube, etc.
+- Imagine you're using a browser like Chrome.
+- When you open multiple standard tabs, each one functions like a thread — they run independently but share the same memory and resources of the parent browser process.
+- For example, one tab may be loading a website while another is playing a video.
+- However, when you open an incognito tab, it often runs as a separate process.
+- That incognito process can have its own threads (multiple incognito tabs) that share resources among themselves, but remain isolated from the standard browsing process.
+- So:
+  - Standard tabs → threads within a process.
+  - Incognito tabs → separate process (but threads within that process still share resources).
 
 ---
 
@@ -72,7 +77,8 @@
 - Example:
   - While watching a video, you're also writing code.
 - This is possible only because the CPU has **multiple cores** or is fast enough to **context switch**.
-- Earlier with single-core systems, multitasking was due to time sharing between processes. Now, through multiple cores true parallelism is achieved and system multitasks concurrently.
+- Earlier with single-core systems, multitasking was due to time sharing between processes using context switching. Now, through multiple cores true parallelism is achieved and system multitasks concurrently.
+- Multitasking can also be achieved using multithreading.
 
 ---
 
