@@ -159,3 +159,5 @@ Each consumer tracks the last read position (offset). This offset can be:
 * Manually committed (to allow for retries or exactly-once semantics)
 
 ---
+
+Read : https://medium.com/@cobch7/kafka-architecture-43333849e0f4
