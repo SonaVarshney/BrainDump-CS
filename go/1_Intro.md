@@ -58,3 +58,13 @@ It combines the **performance of C**, the **simplicity of Python**, and **concur
 * And unlike Java, you don’t carry heavy syntax and runtime baggage.
 
 
+---
+
+> Statically typed means that the data type of every variable is known at compile time, before the program runs.
+
+> 💡 In simple terms:
+> - You must declare (or the compiler must infer) the type of a variable when you create it.
+> - The compiler checks that you only use variables with operations valid for their type.
+> - If there's a type mismatch, the program won’t compile.
+
+
